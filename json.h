@@ -35,7 +35,7 @@ struct JsonParser {
     } state;
 };
 
-void init_json_parser(struct JsonParser *parser, char *input) {
+void json_parser_init(struct JsonParser *parser, char *input) {
     parser->state.size = 0;
     parser->current_position = input;
     parser->last_position = parser->current_position;
